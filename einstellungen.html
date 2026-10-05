@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ENGI Einstellungen">
+    <title>ENGI – Einstellungen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage">
+    <header class="site-header"><div class="header-inner">
+        <a href="index.html" class="logo"><span class="logo-icon">E</span><span><strong>ENGI</strong><small>Karteikarten</small></span></a>
+        <nav class="main-nav" aria-label="Hauptnavigation">
+            <a href="index.html" class="nav-link">📚 Stapel</a>
+            <a href="statistik.html" class="nav-link">📊 Statistik</a>
+            <a href="einstellungen.html" class="nav-link active">⚙️ Einstellungen</a>
+            <button id="themeButton" class="theme-button" type="button">🌙 Darstellung</button>
+        </nav>
+    </div></header>
+    <main class="main-content"><div class="page-container">
+        <section class="welcome-section"><div><span class="eyebrow">APP ANPASSEN</span><h1>Einstellungen</h1><p>ENGI speichert deine Daten lokal in diesem Browser.</p></div></section>
+        <section class="content-card settings-list">
+            <div><h2>Darstellung</h2><p>Wechsle zwischen hellem und dunklem Design über die Schaltfläche oben.</p></div>
+            <div><h2>Datenspeicherung</h2><p>Die Karten bleiben auf diesem Gerät. Eine Cloud-Synchronisation oder ein Benutzerkonto gibt es bewusst nicht.</p></div>
+            <div><h2>Datensicherheit</h2><p>Sichere deine Stapel als JSON-Datei oder stelle eine zuvor exportierte Datei wieder her.</p><div class="settings-actions"><button id="exportButton" class="primary-button" type="button">Daten exportieren</button><label class="secondary-button file-button" for="importFile">Daten importieren<input id="importFile" type="file" accept="application/json,.json" hidden></label></div><p id="transferMessage" class="app-message" hidden aria-live="polite"></p></div>
+        </section>
+        <a class="back-button" href="index.html">← Zurück zu den Stapeln</a>
+    </div></main>
+    <script type="module" src="page.js"></script>
+    <script type="module" src="data-transfer.js"></script>
+</body>
+</html>

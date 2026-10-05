@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ENGI Lernstatistik">
+    <title>ENGI – Statistik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage">
+    <header class="site-header"><div class="header-inner">
+        <a href="index.html" class="logo"><span class="logo-icon">E</span><span><strong>ENGI</strong><small>Karteikarten</small></span></a>
+        <nav class="main-nav" aria-label="Hauptnavigation">
+            <a href="index.html" class="nav-link">📚 Stapel</a>
+            <a href="statistik.html" class="nav-link active">📊 Statistik</a>
+            <a href="einstellungen.html" class="nav-link">⚙️ Einstellungen</a>
+            <button id="themeButton" class="theme-button" type="button">🌙 Darstellung</button>
+        </nav>
+    </div></header>
+    <main class="main-content"><div class="page-container">
+        <section class="welcome-section"><div><span class="eyebrow">DEIN LERNFORTSCHRITT</span><h1>Statistik</h1><p>Ein kompakter Überblick über deine Antworten und abgeschlossenen Karten.</p></div></section>
+        <section id="stats" class="stats-grid" aria-live="polite"><p class="empty-state">Statistiken werden geladen …</p></section>
+        <a class="back-button" href="index.html">← Zurück zu den Stapeln</a>
+    </div></main>
+    <script type="module" src="page.js"></script><script type="module" src="stats.js"></script>
+</body>
+</html>
